@@ -1,8 +1,56 @@
 body {
     background-color: black;
+    color: #fff;
 }
 .container {
     text-align: center;
     margin: 100px auto 0;
     width: 60%;
 }
+.header {
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.link:hover{
+    color: rgb(139, 175, 145);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.section_archievements {
+    padding: 50px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 75px;
+    text-align: center;
+    background: linear-gradient(90deg, #ff0000, #006600);
+  background-size: 200% auto;
+
+  /* "Натягиваем" градиент на текст */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Прячем основной цвет текста, чтобы увидеть градиент */
+  -webkit-text-fill-color: transparent;
+
+  /* Анимация смены позиции градиента */
+  animation: changeColor 4s ease-in-out infinite alternate;
+}
+
+
