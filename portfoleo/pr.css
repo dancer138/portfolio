@@ -16,19 +16,23 @@ body {
 }
 
 .link {
+    font-size: 25px;
     color: #fff;
     text-decoration: none;
 
 }
 
 .link:hover{
-    color: rgb(139, 175, 145);
+    color: rgb(4, 0, 255);
+
 }
 
 .menu {
     display: flex;
     gap: 20px;
 }
+
+
 
 .section_archievements {
     padding: 50px 30px;
@@ -39,7 +43,7 @@ body {
 .title {
     font-size: 75px;
     text-align: center;
-    background: linear-gradient(90deg, #ff0000, #006600);
+    background: linear-gradient(90deg, #006600, #ff0000, #006600);
   background-size: 200% auto;
 
   /* "Натягиваем" градиент на текст */
@@ -50,7 +54,7 @@ body {
   -webkit-text-fill-color: transparent;
 
   /* Анимация смены позиции градиента */
-  animation: changeColor 4s ease-in-out infinite alternate;
+  animation: changeColor 1s ease-in-out infinite alternate;
 }
 
 
