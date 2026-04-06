@@ -47,14 +47,12 @@ body {
     background: linear-gradient(90deg, #006600, #ff0000, #006600);
   background-size: 200% auto;
 
-  /* "Натягиваем" градиент на текст */
+
   -webkit-background-clip: text;
   background-clip: text;
 
-  /* Прячем основной цвет текста, чтобы увидеть градиент */
   -webkit-text-fill-color: transparent;
 
-  /* Анимация смены позиции градиента */
   animation: changeColor 1s ease-in-out infinite alternate;
 }
 /* .partners__grid {
@@ -76,4 +74,47 @@ body {
  text-align: center;
  height: 60px;
  font-size: 40px;
+ background: linear-gradient( #000000, #ff8c00);
+background-size: 200% auto;
 }
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: transparent; /* Прозрачный фон */
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid #ff8c00; /* Оранжевая внешняя граница */
+  }
+  .brand-item {
+    padding: 28px 16px;
+    text-align: center;
+    border-bottom: 1px solid #ff8c00; /* Оранжевые линии */
+    border-right: 1px solid #ff8c00; /* Оранжевые линии */
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s;
+    background: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон ячеек */
+    backdrop-filter: blur(2px); /* Лёгкое размытие для стеклянного эффекта */
+  }
+
+  .brand-item-logo  {
+    width: 100px;
+    object-fit: cover;
+    height: 100px;
+}
+
+  .brand-item.transparent {
+    background: transparent;
+  }
+  .brand-item:nth-child(4n) { border-right: none; }
+  .brand-item:nth-last-child(-n+4) { border-bottom: none; }
+  .brand-item:hover {
+    background: rgba(255, 140, 0, 0.1); /* Лёгкая оранжевая подсветка при наведении */
+    transform: scale(1.02);
+  }
+  @media (max-width: 768px) {
+    .brands-grid { grid-template-columns: repeat(2, 1fr); }
+    .brand-item:nth-child(2n) { border-right: none; }
+    .brand-item:nth-last-child(-n+2) { border-bottom: none; }
+  }
