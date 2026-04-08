@@ -118,3 +118,9 @@ background-size: 200% auto;
     .brand-item:nth-child(2n) { border-right: none; }
     .brand-item:nth-last-child(-n+2) { border-bottom: none; }
   }
+.CR7 {
+  width: 100vw;
+  height: 100vh; 
+  object-fit: cover;
+
+}
