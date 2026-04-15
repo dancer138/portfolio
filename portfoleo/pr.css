@@ -55,20 +55,7 @@ body {
 
   animation: changeColor 1s ease-in-out infinite alternate;
 }
-/* .partners__grid {
-    margin: 0 auto;
-    padding: 90px 32px;
-    max-width: 950px;
-}
-.partners__grid-wrapper {
-    grid-template-columns: repeat(5, 1fr);
-}
-.partners__grid-wrapper {
-    display: grid;
-    grid-gap: 1px;
-    grid-template-columns: repeat(2, 1fr);
-    background: radial-gradient(circle, rgba(255, 103, 31, 0.6) 0%, rgba(0, 0, 0, 0) 75%);
-} */
+
 .footertext {
   
  text-align: center;
@@ -122,5 +109,17 @@ background-size: 200% auto;
   width: 100vw;
   height: 100vh; 
   object-fit: cover;
+position: relative;
 
+}
+.campaign__play-button {
+position: absolute;
+  top: 20px;         
+  left: 48%;
+  width: 100px;  
+  top: 700px;
+  background-color: transparent;
+  /* justify-content: center; */
+  border:none;
+  
 }
