@@ -9,17 +9,19 @@ body {
     width: 60%;
 }
 .header {
-    height: 23px;
+    height: 15px;
     width: 100%;
     padding: 20px;
     position: fixed;
-    font-size: 40px; 
+    font-size: 30px; 
     background-color: #838383;
+     z-index: 1000;
 }
 
 .header-link{
   color: rgb(255, 255, 255);
 text-decoration: none;
+
 }
 
 .link {
@@ -52,14 +54,11 @@ text-decoration: none;
     text-align: center;
     background: linear-gradient(90deg, #006600, #ff0000, #006600);
   background-size: 200% auto;
-
-
   -webkit-background-clip: text;
   background-clip: text;
-
   -webkit-text-fill-color: transparent;
-
   animation: changeColor 1s ease-in-out infinite alternate;
+  padding: 40px;
 }
 
 .footertext {
@@ -112,19 +111,10 @@ background-size: 200% auto;
     .brand-item:nth-last-child(-n+2) { border-bottom: none; }
   }
 .section_video {
-  /* width: 100vw;
-  height: 100vh;  */
   position: relative;
-
+  padding: 30px;
+width: 100%;
 }
-/* .campaign__play-button {
-position: absolute;
-  top: 38%;         
-  left: 50%;
-  background-color: transparent;
-  border:none;
-   */
-  
 
 .myVideo {
   width: 100%;
