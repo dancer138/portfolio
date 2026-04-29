@@ -9,13 +9,17 @@ body {
     width: 60%;
 }
 .header {
-    height: 100px;
+    height: 23px;
+    width: 100%;
     padding: 20px;
-    align-items: center;
     position: fixed;
-    font-size: 50px;
-    
+    font-size: 40px; 
+    background-color: #838383;
+}
 
+.header-link{
+  color: rgb(255, 255, 255);
+text-decoration: none;
 }
 
 .link {
@@ -26,7 +30,7 @@ body {
 }
 
 .link:hover{
-    color: rgb(0, 26, 255);
+    color: rgb(4, 0, 255);
 
 }
 
