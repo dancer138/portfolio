@@ -136,3 +136,15 @@ width: 100%;
   width: var(--image-width);
   border-radius: 50%;
  }
+ .biography {
+    display: flex;       
+    align-items: start;  
+    gap: 20px;
+  }
+.biography p { 
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 60px;    
+  text-align: justify;    
+  color: rgb(255, 255, 255);   
+}
