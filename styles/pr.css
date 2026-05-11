@@ -125,26 +125,71 @@ width: 100%;
   height: 100vh; 
   margin-bottom: 200px;
 }
- /* .Ronaldo-photo  {
-  height: var(--image-width);
-  width: var(--image-width);
-  border-radius: 50%;
- } */
- 
- .Crish {
-  height: var(--image-width);
-  width: var(--image-width);
-  border-radius: 50%;
- }
- .biography {
-    display: flex;       
-    align-items: start;  
-    gap: 20px;
-  }
-.biography p { 
-  font-size: 55px;
-  font-weight: 300;
-  line-height: 60px;    
-  text-align: justify;    
-  color: rgb(255, 255, 255);   
+
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0b0b0b;
+  color: #fff;
+}
+
+/* Основной блок */
+.bio-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background: linear-gradient(to right, #111, #1a1a1a);
+  border-top: 3px solid gold;
+  border-bottom: 3px solid gold;
+  height: 500px;
+  width: 100%;
+}
+
+.bio-photo {
+  width: 300px;
+  border-radius: 10px;
+  margin-right: 40px;
+  box-shadow: 0 0 25px gold;
+}
+
+.bio-text {
+  max-width: 600px;
+}
+
+.bio-text h1 {
+  color: gold;
+  font-size: 36px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 10px gold);
+}
+
+.bio-text h2 {
+  color: #ccc;
+  font-size: 24px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px gold);
+}
+
+.bio-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* трофеи */
+.trophies {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.trophies img {
+  width: 70px;
+  filter: drop-shadow(0 0 10px gold);
+  transition: 0.3s;
+}
+
+.trophies img:hover {
+  transform: scale(1.1);
 }
