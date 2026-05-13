@@ -18,13 +18,23 @@ body {
      z-index: 1000;
 }
 
-.header-link{
+.header-link1{
   color: rgb(255, 255, 255);
 text-decoration: none;
 font-family: 'Helvetica', sans-serif;
-
-
 }
+
+.header-link2{
+  color: rgb(255, 255, 255);
+text-decoration: none;
+font-family: 'Helvetica', sans-serif;
+}
+.header-link3{
+  color: rgb(255, 255, 255);
+text-decoration: none;
+font-family: 'Helvetica', sans-serif;
+}
+
 
 .link {
     font-size: 25px;
@@ -33,10 +43,20 @@ font-family: 'Helvetica', sans-serif;
 
 }
 
-.header-link:hover{
-    color:#d37400
+.header-link1:hover{
+    color: gold;
 
 }
+.header-link2:hover{
+  color: gold;
+
+}
+
+.header-link3:hover{
+  color: gold;
+
+}
+
 
 .menu {
     display: flex;
@@ -134,7 +154,7 @@ body {
   color: #fff;
 }
 
-/* Основной блок */
+
 .bio-section {
   display: flex;
   align-items: center;
@@ -143,8 +163,8 @@ body {
   background: linear-gradient(to right, #111, #1a1a1a);
   border-top: 3px solid gold;
   border-bottom: 3px solid gold;
-  height: 500px;
   width: 100%;
+  flex-direction:column;
 }
 
 .bio-photo {
@@ -177,7 +197,7 @@ body {
   line-height: 1.6;
 }
 
-/* трофеи */
+
 .trophies {
   display: flex;
   gap: 15px;
@@ -185,11 +205,58 @@ body {
 }
 
 .trophies img {
-  width: 70px;
+  width: 90px;
   filter: drop-shadow(0 0 10px gold);
   transition: 0.3s;
 }
 
 .trophies img:hover {
   transform: scale(1.1);
+}
+
+
+.counter-section {
+  background: #000;
+  padding: 70px 20px;
+  color: #f5d27a;
+}
+
+.counter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.counter-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(245, 210, 122, 0.4);
+}
+
+.counter-stats h2 {
+  font-size: 34px;
+  margin-bottom: 25px;
+  color: #ffd56a;
+}
+
+.stat {
+  margin-bottom: 20px;
+}
+
+.stat .number {
+  font-size: 42px;
+  font-weight: bold;
+  color: #ffdf8c;
+  text-shadow: 0 0 10px rgba(255, 215, 100, 0.6);
+}
+
+.stat .label {
+  display: block;
+  font-size: 18px;
+  opacity: 0.85;
+  margin-top: 5px;
 }
