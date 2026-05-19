@@ -137,7 +137,6 @@ font-family: 'Helvetica', sans-serif;
 .section_video {
   position: relative;
   padding: 30px;
-width: 100%;
 }
 
 .myVideo {
@@ -159,7 +158,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 50px 0px;
   background: #000;
   border-top: 3px solid gold;
   border-bottom: 3px solid gold;
@@ -170,7 +169,6 @@ body {
 .bio-photo {
   width: 300px;
   border-radius: 10px;
-  margin-right: 40px;
   box-shadow: 0 0 25px gold;
 }
 
@@ -183,6 +181,8 @@ body {
   font-size: 36px;
   margin-bottom: 10px;
   filter: drop-shadow(0 0 10px gold);
+  text-align: center;
+
 }
 
 .bio-text h2 {
@@ -219,6 +219,7 @@ body {
   background: #000;
   padding: 70px 20px;
   color: #f5d27a;
+  align-items: center;
 }
 
 .counter-container {
@@ -231,10 +232,11 @@ body {
 }
 
 .counter-image {
-  max-width: 650px;
+  max-width: 600px;
   border-radius: 18px;
   box-shadow: 0 0 25px rgba(245, 210, 122, 0.4);
   align-items: center;
+  
 }
 
 .counter-stats h2 {
