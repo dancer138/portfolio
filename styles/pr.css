@@ -97,21 +97,21 @@ font-family: 'Helvetica', sans-serif;
 .brands-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background: transparent; /* Прозрачный фон */
+    background: transparent; 
     border-radius: 24px;
     overflow: hidden;
-    border: 1px solid #ff8c00; /* Оранжевая внешняя граница */
+    border: 1px solid #ff8c00; 
   }
   .brand-item {
     padding: 28px 16px;
     text-align: center;
-    border-bottom: 1px solid #ff8c00; /* Оранжевые линии */
-    border-right: 1px solid #ff8c00; /* Оранжевые линии */
+    border-bottom: 1px solid #ff8c00; 
+    border-right: 1px solid #ff8c00; 
     font-weight: 600;
     font-size: 14px;
     transition: all 0.2s;
-    background: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон ячеек */
-    backdrop-filter: blur(2px); /* Лёгкое размытие для стеклянного эффекта */
+    background: rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur(2px); 
   }
 
   .brand-item-logo  {
@@ -126,7 +126,7 @@ font-family: 'Helvetica', sans-serif;
   .brand-item:nth-child(4n) { border-right: none; }
   .brand-item:nth-last-child(-n+4) { border-bottom: none; }
   .brand-item:hover {
-    background: rgba(255, 140, 0, 0.1); /* Лёгкая оранжевая подсветка при наведении */
+    background: rgba(255, 140, 0, 0.1); 
     transform: scale(1.02);
   }
   @media (max-width: 768px) {
@@ -230,11 +230,11 @@ body {
   flex-wrap: wrap;
 }
 
-.counter-image img {
-  width: 600px;  
-  height: auto;
+.counter-image {
+  max-width: 650px;
   border-radius: 18px;
-  box-shadow: 0 0 25px rgba(245, 210, 122, 0.4)
+  box-shadow: 0 0 25px rgba(245, 210, 122, 0.4);
+  align-items: center;
 }
 
 .counter-stats h2 {
@@ -340,4 +340,11 @@ body {
 
 .socials a:hover {
   opacity: 1;
+}
+
+.counter-stats {
+   display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  gap: 20px;
 }
